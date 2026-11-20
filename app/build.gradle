@@ -30,9 +30,9 @@ android {
     signingConfigs {
         release {
             storeFile file("../coreroot-release.keystore")
-            storePassword System.getenv("COREROOT_STORE_PASS") ?: "CoreRoot@2026"
+            storePassword System.getenv("COREROOT_STORE_PASS")
             keyAlias "coreroot"
-            keyPassword System.getenv("COREROOT_KEY_PASS") ?: "CoreRoot@2026"
+            keyPassword System.getenv("COREROOT_KEY_PASS")
             v1SigningEnabled true
             v2SigningEnabled true
         }
