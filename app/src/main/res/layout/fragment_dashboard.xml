@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 品牌横幅 / Root 状态 -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/BrandCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:src="@drawable/ic_launcher_foreground"
+                        android:contentDescription="@string/app_name" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/root_status_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/root_status_missing"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/app_slogan"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/root_badge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:checkable="false"
+                        android:text="ROOT"
+                        android:textColor="@color/brand_ink"
+                        app:chipBackgroundColor="@color/accent" />
+                </LinearLayout>
+
+                <!-- 统计条 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/stat_pill" android:id="@+id/stat_allowed" />
+                    <include layout="@layout/stat_pill" android:id="@+id/stat_denied" />
+                    <include layout="@layout/stat_pill" android:id="@+id/stat_ask" />
+                    <include layout="@layout/stat_pill" android:id="@+id/stat_modules" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- 设备信息网格 -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:columnCount="2"
+            android:rowCount="3">
+
+            <include layout="@layout/info_tile" android:id="@+id/info_arch" />
+            <include layout="@layout/info_tile" android:id="@+id/info_kernel" />
+            <include layout="@layout/info_tile" android:id="@+id/info_system" />
+            <include layout="@layout/info_tile" android:id="@+id/info_brand" />
+            <include layout="@layout/info_tile" android:id="@+id/info_hardware" />
+            <include layout="@layout/info_tile" android:id="@+id/info_native" />
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>

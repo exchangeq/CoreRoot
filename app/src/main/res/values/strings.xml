@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CoreRoot</string>
+    <string name="app_full_name">CoreRoot 权限管理器</string>
+    <string name="app_slogan">掌控核心权限，稳定而克制</string>
+
+    <!-- 底部导航 -->
+    <string name="nav_home">仪表盘</string>
+    <string name="nav_grants">授权</string>
+    <string name="nav_modules">模块</string>
+    <string name="nav_console">终端</string>
+    <string name="nav_settings">设置</string>
+
+    <!-- 仪表盘 -->
+    <string name="dashboard_title">设备概览</string>
+    <string name="root_status_installed">Root 已就绪</string>
+    <string name="root_status_missing">未检测到 Root</string>
+    <string name="card_architecture">架构</string>
+    <string name="card_kernel">内核</string>
+    <string name="card_system">系统版本</string>
+    <string name="card_brand">厂商 / 机型</string>
+    <string name="card_hardware">硬件平台</string>
+    <string name="card_native">原生库</string>
+    <string name="summary_allowed">已允许</string>
+    <string name="summary_denied">已拒绝</string>
+    <string name="summary_ask">待询问</string>
+    <string name="summary_modules">启用模块</string>
+
+    <!-- 授权页 -->
+    <string name="grants_title">应用授权管理</string>
+    <string name="grants_subtitle">决定哪些应用可以请求特权操作</string>
+    <string name="grant_status">授权状态</string>
+    <string name="empty_grants">暂无授权记录</string>
+
+    <!-- 模块页 -->
+    <string name="modules_title">原创模块</string>
+    <string name="modules_subtitle">按需启用能力扩展，开关即时生效</string>
+
+    <!-- 终端 -->
+    <string name="console_title">特权终端</string>
+    <string name="console_hint">输入 shell 命令，例如 getprop ro.build.version.release</string>
+    <string name="console_run">执行</string>
+    <string name="console_clear">清空</string>
+    <string name="console_output">输出</string>
+
+    <!-- 设置 -->
+    <string name="settings_title">设置</string>
+    <string name="section_about">关于</string>
+    <string name="item_version">版本</string>
+    <string name="item_signature">签名方案</string>
+    <string name="item_native">原生桥接</string>
+    <string name="item_open_source">开源许可</string>
+    <string name="item_design">设计理念</string>
+    <string name="pref_theme">跟随系统深色模式</string>
+    <string name="pref_confirm">授权前二次确认</string>
+    <string name="pref_log">保留调试日志</string>
+
+    <!-- 开源许可页 -->
+    <string name="license_title">开源许可</string>
+    <string name="license_body">CoreRoot 权限管理器为原创自由软件，以 GPL-3.0 协议发布。\n\n你可以自由使用、修改与再分发，但基于本项目的衍生作品须同样以 GPL-3.0 开源。\n\n本项目不捆绑、不内置任何已知厂商的私有框架或二进制；原生层为独立 C 实现。\n\n第三方组件许可：\n· AndroidX — Apache-2.0\n· Material Components — Apache-2.0\n· Kotlin Standard Library — Apache-2.0</string>
+
+    <string name="design_body">设计理念：\n标志取「核心徽章」之意——六边形外廓象征守护与边界，内部根系分叉象征对系统底层的掌控与延伸。\n配色以深墨蓝奠定权威与沉稳，青绿锋芒点缀活力与科技感；圆角卡片与克制留白，兼顾专业与时尚。\n每一处布局均按基准网格对齐，避免错位与挤压，追求在各类屏幕上稳定、清晰、可读。</string>
+
+    <string name="copyright">© 2026 CoreRoot Team · 原创作品 · 保留所有权利之外的自由</string>
+</resources>

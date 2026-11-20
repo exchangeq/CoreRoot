@@ -1,0 +1,21 @@
+# Gradle
+.gradle/
+build/
+app/build/
+.cxx/
+
+# Local config (SDK / NDK 路径、签名口令，不入库)
+local.properties
+
+# 签名密钥库（保留在本机，不随开源仓库分发）
+*.keystore
+*.jks
+
+# IDE
+.idea/
+*.iml
+captures/
+.navigation/
+
+# OS
+.DS_Store

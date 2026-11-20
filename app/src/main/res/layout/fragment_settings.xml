@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_title"
+            style="@style/SectionTitle"
+            android:textSize="22sp" />
+
+        <!-- 关于 -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/InfoCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/setting_row" android:id="@+id/row_version" />
+                <include layout="@layout/setting_row" android:id="@+id/row_signature" />
+                <include layout="@layout/setting_row" android:id="@+id/row_native" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- 偏好 -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/InfoCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/setting_switch" android:id="@+id/pref_theme" />
+                <include layout="@layout/setting_switch" android:id="@+id/pref_confirm" />
+                <include layout="@layout/setting_switch" android:id="@+id/pref_log" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- 开源与设计 -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/InfoCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/setting_link" android:id="@+id/item_open_source" />
+                <include layout="@layout/setting_link" android:id="@+id/item_design" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/copyright"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:paddingTop="8dp" />
+    </LinearLayout>
+</ScrollView>
